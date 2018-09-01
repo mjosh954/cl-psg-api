@@ -10,7 +10,7 @@ services:
     image: postgres
     restart: always
     volumes:
-      - /private/var/lib/postgresql:/var/lib/postgresql
+      - ./volume/postgresql:/var/lib/postgresql
     ports:
       - "5432:5432"
     environment:
