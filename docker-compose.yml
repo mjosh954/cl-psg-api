@@ -2,6 +2,8 @@ version: '3'
 
 services:
   app:
+    ports:
+      - "3000:3000"
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,10 +12,10 @@ services:
     image: postgres
     restart: always
     volumes:
-      - ./volume/postgresql:/var/lib/postgresql
+      - ./db:/docker-entrypoint-initdb.d/
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: pguser
-      POSTGRES_PASSWORD: password123
-      POSTGRES_DB: pgdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: foobar
+      POSTGRES_DB: clbackdb
