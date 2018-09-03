@@ -1,36 +1,12 @@
 # cl-back
 
-FIXME: description
+FIXME: Clojure app using Docker, Ring, Korma and Postgres
 
 ## Installation
 
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar cl-back-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Download docker from https://www.docker.com/
+Run: docker-compose build & docker-compose up
 
 ## License
 
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Copyright © 2018
