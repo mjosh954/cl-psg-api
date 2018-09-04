@@ -13,4 +13,5 @@
     [environ "1.1.0"]]
   :main ^:skip-aot cl-back.core
   :target-path "target/%s"
+  :plugins [[lein-gorilla "0.4.0"]]
   :profiles {:uberjar {:aot :all}})
